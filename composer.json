@@ -35,7 +35,8 @@
             "Abolaradev\\ActionRateLimiter\\": "src/",
             "Abolaradev\\ActionRateLimiter\\Database\\Factories\\": "database/factories/"
         },
-        "files": []
+        
+        "files": ["src/helpers/helpers.php"]
     },
     "autoload-dev": {
         "psr-4": {
