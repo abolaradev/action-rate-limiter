@@ -1,10 +1,10 @@
 <?php
 
-namespace Abolaradev\LivewireRateLimiter;
+namespace Abolaradev\ActionRateLimiter;
 
 use Illuminate\Support\ServiceProvider;
 
-class LivewireRateLimiterServiceProvider extends ServiceProvider
+class ActionRateLimiterServiceProvider extends ServiceProvider
 {
      /**
      * Register any application services.
@@ -13,8 +13,8 @@ class LivewireRateLimiterServiceProvider extends ServiceProvider
     {
         // Merge package configuration.
         $this->mergeConfigFrom(
-            __DIR__.'/../config/livewire-rate-limiter.php',
-            'livewire-rate-limiter'
+            __DIR__.'/../config/action-rate-limiter.php',
+            'action-rate-limiter'
         );
     }
 
@@ -30,8 +30,8 @@ class LivewireRateLimiterServiceProvider extends ServiceProvider
 
         // Publish the package configuration file
         $this->publishes([
-            __DIR__.'/../config/livewire-rate-limiter.php' => config_path('livewire-rate-limiter.php'),
-        ], ['livewire-rate-limiter', 'livewire-rate-limiter-config']);
+            __DIR__.'/../config/action-rate-limiter.php' => config_path('action-rate-limiter.php'),
+        ], ['action-rate-limiter', 'action-rate-limiter-config']);
 
     }
 }

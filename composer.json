@@ -1,12 +1,12 @@
 {
-    "name": "abolaradev/livewore-rate-limiter",
+    "name": "abolaradev/action-rate-limiter",
     "description": "A lightweight Laravel rate limiter package built on top of Laravel's native Rate Limiter, providing an extended and more convenient API for defining, managing, and controlling rate limits across your application.",
     "keywords": [
         "abolaradev",
         "laravel",
         "livewire-rate-limiter"
     ],
-    "homepage": "https://github.com/abolaradev/livewire-rate-limiter",
+    "homepage": "https://github.com/abolaradev/action-rate-limiter",
     "license": "MIT",
     "authors": [
         {
@@ -32,14 +32,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Abolaradev\\LivewireRateLimiter\\": "src/",
-            "Abolaradev\\LivewireRateLimiter\\Database\\Factories\\": "database/factories/"
+            "Abolaradev\\ActionRateLimiter\\": "src/",
+            "Abolaradev\\ActionRateLimiter\\Database\\Factories\\": "database/factories/"
         },
         "files": []
     },
     "autoload-dev": {
         "psr-4": {
-            "Abolaradev\\LivewireRateLimiter\\Tests\\": "tests/",
+            "Abolaradev\\ActionRateLimiter\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -70,10 +70,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Abolaradev\\LivewireRateLimiter\\LivewireRateLimiterServiceProvider"
+                "Abolaradev\\ActionRateLimiter\\ActionRateLimiterServiceProvider"
             ],
             "aliases": {
-                "LivewireRateLimiter": "Abolaradev\\LivewireRateLimiter\\Facades\\LivewireRateLimiter"
+                "ActionRateLimiter": "Abolaradev\\ActionRateLimiter\\Facades\\ActionRateLimiter"
             }
         }
     },
